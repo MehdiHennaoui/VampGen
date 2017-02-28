@@ -26,7 +26,7 @@ export default class Step1 extends Component {
 
 		}
 		
-		handleChange(event, ){
+		handleChange(event){
 			
 			this.setState({value: event.target.value});
 
@@ -45,14 +45,20 @@ export default class Step1 extends Component {
 						
 					
 				return (
-						
-						<form>
+						<div>
 							
-								{multipleInput}							
-							<input type="submit" value="Suivant"/>
+							<h1>Etape 1</h1>
 						
-						</form>
-
+							<form>
+							
+								{multipleInput}
+								<button type="submit" value="Suivant">
+														
+									<Link to="/step2" >Suivant</Link>
+								</button>
+							</form>
+						
+						</div>
 						);
 
 			}
