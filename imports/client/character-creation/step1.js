@@ -55,6 +55,7 @@ export default class Step1 extends Component {
 								<button type="submit" value="Suivant">
 														
 									<Link to="/step2" >Suivant</Link>
+								
 								</button>
 							</form>
 						
