@@ -9,7 +9,9 @@ export default class Step2 extends Component {
 
 		return (
 					<div> 
+						
 						<h1>Etape 2</h1>
+					
 					</div>
 
 					);

@@ -39,8 +39,10 @@ export default class Step1 extends Component {
 		render(){
 				const multipleInput = this.state.input.map(input => (
 					<div key={input.id}>
+						
 						<label>{input.label}</label>
 						<InputText   name={input.name} value={this.state.input.value} onChange={this.handleChange}/>  
+					
 					</div>))
 						
 					
