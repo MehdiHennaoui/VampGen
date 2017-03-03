@@ -4,11 +4,14 @@ import { Link } from 'react-router';
 import InputRadio from './input/input-radio';
 import InputSelect from './input/input-select';
 
+ 
+
+
 export default class Step2 extends Component {
 
-	constructor() {
+	constructor(props) {
 		
-		super();
+		super(props);
 
 		this.state = {
 			
@@ -28,7 +31,9 @@ export default class Step2 extends Component {
 					{id:12, label:"Giovanni", value:"Giovanni",},
 					{id:13, label:"Ravnos", value:"Ravnos",}],
 			
-			selectedOption: "Brujahs",	
+			selectedOption: "",
+			displaySubmit: false,
+				
 			
 		}
 			this.handleOptionChange = this.handleOptionChange.bind(this);
@@ -41,22 +46,21 @@ export default class Step2 extends Component {
 		
 		this.setState({
 														
-			selectedOption: event.target.value
-																												
+			selectedOption: event.target.value,
+			displaySubmit: true																								
 		});
-	
+		
 	}
-
 	
+
 
 
 	
 	handleFormSubmit(formSubmitEvent) {
 
 		formSubmitEvent.preventDefault();
-
 		
-
+		
 	}
 	
 
@@ -78,10 +82,11 @@ export default class Step2 extends Component {
 		return (
 					<div> 
 						<form onSubmit={this.handleFormSubmit}>
-							<div onChange={this.handleOptionChange}>
-							{multipleInputRadio}
+							<div onChange={this.handleOptionChange} >
+								{multipleInputRadio}
+								{this.state.displaySubmit ? <input type="submit"/> : <p>Cliquez sur un clan</p>}
 							</div>
-							<input type="submit"/>
+							
 						</form>
 					</div>
 
