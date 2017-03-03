@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+
+class CreateCharacter extends Component{ 
+
+	render(){
+		
+		return (
+			<button>
+				<Link to="/step1">Créer Personnage</Link>
+			</button>
+			);
+		
+		};
+
+}
 
 export default class App extends Component {
 
 	render(){
 
 		return (
-			
-				<h1>Hello world</h1>
-			
+				<div>
+					<h1>Création de personnages pour Vampires la mascarade</h1>
+					<CreateCharacter/>
+				</div>
 			)
 
 	}
