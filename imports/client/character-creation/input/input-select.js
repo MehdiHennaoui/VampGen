@@ -10,4 +10,4 @@ const InputSelect = () =>
 	
 	</select>
 
-export default InputSelect	
+export default InputSelect;	

@@ -13,6 +13,7 @@ import Step2 from './character-creation/step2';
 
 Meteor.startup(() => {
 	render(
+		
 		<Router history={browserHistory}>
 			
 			<Route path="/" component={App} />
