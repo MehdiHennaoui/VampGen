@@ -86,7 +86,7 @@ export default class Clan extends Component {
 							
 							<div onChange={this.handleOptionChange} >
 								{multipleInputRadio}
-								{this.state.displaySubmit ? <button type="submit"><Link to="step3">Suivant</Link></button> : <p>Cliquez sur un clan</p>}
+								{this.state.displaySubmit ? <button type="submit"><Link to="/attributes">Suivant</Link></button> : <p>Cliquez sur un clan</p>}
 							</div>
 							
 						</form>

@@ -18,9 +18,9 @@ export default class Description extends Component {
 					{id: 2, label : "Nom du joueur", name : "player", value: ""},
 					{id: 3, label: "Nature", name: "Nature", value: ""},
 					{id: 4, label: "Attitude", name: "demeanor", value: ""},
-					{id: 5, label : "Concept", name: "Concept", value: ""}]
+					{id: 5, label : "Concept", name: "Concept", value: ""}],
 					showErrors: false,
-					validationErrors: {}
+					
 
 				}
 			
@@ -59,7 +59,7 @@ export default class Description extends Component {
 								{multipleInput}
 								<button type="submit" value="Suivant">
 														
-									<Link to="/step2" >Suivant</Link>
+									<Link to="/clan" >Suivant</Link>
 								
 								</button>
 							</form>

@@ -7,7 +7,7 @@ class CreateCharacter extends Component{
 		
 		return (
 			<button>
-				<Link to="/step1">Créer Personnage</Link>
+				<Link to="/description">Créer Personnage</Link>
 			</button>
 			);
 		
