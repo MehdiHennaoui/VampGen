@@ -18,9 +18,9 @@ Meteor.startup(() => {
 		<Router history={browserHistory}>
 			
 			<Route path="/" component={App} />
-			<Route path="/step1" component={Step1} />
-			<Route path="/step2" component={Step2} />
-			<Route path="/step3" component={Step3} />
+			<Route path="/step1" component={Description} />
+			<Route path="/step2" component={Clan} />
+			<Route path="/step3" component={Description} />
 		
 		</Router>,
 		document.getElementById('render-target')

@@ -5,7 +5,8 @@ import { Link } from 'react-router';
 import InputText from './input/input-text';
 
 
-export default class Step1 extends Component {
+
+export default class Description extends Component {
 		
 		constructor(){
 
@@ -18,12 +19,13 @@ export default class Step1 extends Component {
 					{id: 3, label: "Nature", name: "Nature", value: ""},
 					{id: 4, label: "Attitude", name: "demeanor", value: ""},
 					{id: 5, label : "Concept", name: "Concept", value: ""}]
-
+					showErrors: false,
+					validationErrors: {}
 
 				}
-
+			
 			this.handleChange = this.handleChange.bind(this);
-
+			
 		}
 		
 		handleChange(event){
@@ -37,6 +39,7 @@ export default class Step1 extends Component {
 
 		
 		render(){
+				
 				const multipleInput = this.state.input.map(input => (
 					<div key={input.id}>
 						

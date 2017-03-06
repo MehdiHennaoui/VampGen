@@ -7,7 +7,7 @@ import InputSelect from './input/input-select';
  
 
 
-export default class Step2 extends Component {
+export default class Clan extends Component {
 
 	constructor(props) {
 		

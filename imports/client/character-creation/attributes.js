@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-export default class Step3 extends Component {
+export default class Attributes extends Component {
 
 	render() {
 		
