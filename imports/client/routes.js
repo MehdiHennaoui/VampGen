@@ -8,9 +8,9 @@ import {
 import { render } from 'react-dom';
 
 import App from './app';
-import Step1 from './character-creation/step1';
-import Step2 from './character-creation/step2';
-import Step3 from './character-creation/step3';
+import Description from './character-creation/description';
+import Clan from './character-creation/clan';
+import Attributes from './character-creation/attributes';
 
 Meteor.startup(() => {
 	render(
@@ -18,9 +18,10 @@ Meteor.startup(() => {
 		<Router history={browserHistory}>
 			
 			<Route path="/" component={App} />
-			<Route path="/step1" component={Step1} />
-			<Route path="/step2" component={Step2} />
-			<Route path="/step3" component={Step3} />
+			<Route path="/description" component={Description} />
+			<Route path="/clan" component={Clan} />
+			<Route path="/attributes" component={Attributes} />
+
 		
 		</Router>,
 		document.getElementById('render-target')
