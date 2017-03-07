@@ -16,9 +16,9 @@ export default class Description extends Component {
 				
 					input:[{id: 1, label : "Nom", name : "player", value: ""},
 					{id: 2, label : "Nom du joueur", name : "player", value: ""},
-					{id: 3, label: "Nature", name: "Nature", value: ""},
+					{id: 3, label: "Nature", name: "nature", value: ""},
 					{id: 4, label: "Attitude", name: "demeanor", value: ""},
-					{id: 5, label : "Concept", name: "Concept", value: ""}],
+					{id: 5, label : "Concept", name: "concept", value: ""}],
 					showErrors: false,
 					
 
@@ -30,7 +30,11 @@ export default class Description extends Component {
 		
 		handleChange(event){
 			
-			this.setState({value: event.target.value});
+			this.setState({
+							
+							value: event.target.value
+
+						});
 
 		}
 
