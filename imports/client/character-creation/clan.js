@@ -7,7 +7,7 @@ import InputSelect from './input/input-select';
  
 
 
-export default class Step2 extends Component {
+export default class Clan extends Component {
 
 	constructor(props) {
 		
@@ -48,6 +48,7 @@ export default class Step2 extends Component {
 														
 			selectedOption: event.target.value,
 			displaySubmit: true																								
+		
 		});
 		
 	}
@@ -82,9 +83,10 @@ export default class Step2 extends Component {
 		return (
 					<div> 
 						<form onSubmit={this.handleFormSubmit}>
+							
 							<div onChange={this.handleOptionChange} >
 								{multipleInputRadio}
-								{this.state.displaySubmit ? <input type="submit"/> : <p>Cliquez sur un clan</p>}
+								{this.state.displaySubmit ? <button type="submit"><Link to="/attributes">Suivant</Link></button> : <p>Cliquez sur un clan</p>}
 							</div>
 							
 						</form>

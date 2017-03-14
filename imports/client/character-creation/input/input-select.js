@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
-const InputSelect = () =>
-
-	<select name={props.name} value={props.value} onChange={props.onChange}>
+const InputSelect = (props) =>
+	<div key={props.id}>
+	<label>{props.nameLabel}
+		<select name={props.name} value={props.value} onChange={props.onChange}>
+			<option value="none"></option>
+			<option value="strong">Fort</option>
+			<option value="medium">Moyen</option>
+			<option value="weak">Faible</option>	
 		
-		<option value="camarilla">Camarilla</option>
-		<option value="sabbat">Sabbat</option>
-		<option value="inde">Independant</option>	
-	
-	</select>
-
+		</select>
+	</label>	
+	</div>
 export default InputSelect;	
